@@ -6,6 +6,7 @@ function home() {
     div.setAttribute('id', 'content');
     div.textContent = "Hello, World!";
 
+    // Home tab, Menu tab, Contact Us tab
     const home = document.createElement('div');
     home.textContent = 'Home';
     home.setAttribute('id', 'tab1');
@@ -19,6 +20,7 @@ function home() {
     const contact = document.createElement('div');
     contact.textContent = 'Contact Us';
     contact.setAttribute('id', 'tab3');
+    // Home tab, Menu tab, Contact Us tab
 
     div.appendChild(home);
     div.appendChild(menu);
