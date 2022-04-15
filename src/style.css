@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 :root {
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Square Peg', cursive;
     font-weight: 600;
-    font-size: 20px;
 }
 
 * {
@@ -28,8 +27,11 @@ body {
     border-top: 100px solid #CBAF87;
     border-bottom: 50px solid #CBAF87;
 
+    padding-right: 50px;
+    padding-left: 50px;
+
     display: grid;
-    grid-template-rows: 100px calc(100vh - 150px) 50px;
+    grid-template-columns: 1fr 0.5fr 1fr;
 
     position: relative;
 }
@@ -37,6 +39,8 @@ body {
 #tab1, #tab2, #tab3 {
     width: 150px;
     height: 50px;
+
+    font-size: 24px;
 
     background-color: #7E8A97;
 
@@ -61,4 +65,65 @@ body {
 #tab3 {
     top: 75px;
     right: 100px;
+}
+
+.name {
+    position: fixed;
+    top: 25px;
+    left: 10px;
+    width: 400px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+}
+
+.about, .intro {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    font-size: 60px;
+}
+
+.intro {
+    font-size: 30px;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    align-content: center;
+    gap: 5px;
+}
+
+.mid > img {
+    width: 300px;
+    height: 300px;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom {
+    font-size: 24px;
+
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
