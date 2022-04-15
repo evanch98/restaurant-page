@@ -2,19 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: {
-        index: './src/index.js',
-        home: './src/home.js'
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Little Myanmar Town',
-        }),
-    ],
+    entry: './src/index.js',
     output: {
-        filename: '[name].bundle.js',
+        filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true,
     },
     module: {
         rules: [
