@@ -35,17 +35,31 @@ body {
     position: relative;
 }
 
-#tab1 {
+#tab1, #tab2, #tab3 {
     width: 150px;
     height: 50px;
 
     background-color: #7E8A97;
 
-    top: 75px;
-    right: 500px;
-
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
+}
+
+#tab1 {
+    top: 75px;
+    right: 500px;
+}
+
+#tab2 {
+    top: 75px;
+    right: 300px;
+}
+
+#tab3 {
+    top: 75px;
+    right: 100px;
 }
