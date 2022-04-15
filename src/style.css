@@ -28,9 +28,8 @@ body {
     border-top: 100px solid #CBAF87;
     border-bottom: 50px solid #CBAF87;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 100px calc(100vh - 150px) 50px;
 
     position: relative;
 }
