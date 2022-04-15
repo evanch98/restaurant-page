@@ -6,8 +6,10 @@ function home() {
     myImg.src = Img;
 
     const body = document.querySelector('body');
-    const div = document.createElement('div');
-    div.setAttribute('id', 'content');
+    const div = document.querySelector('div');
+
+    const main = document.createElement('div');
+    main.setAttribute('id', 'main');
 
     // Home tab, Menu tab, Contact Us tab
     const home = document.createElement('div');
@@ -61,15 +63,15 @@ function home() {
 
     right.appendChild(intro);
     right.appendChild(time);
-    div.appendChild(name);
-    div.appendChild(home);
-    div.appendChild(menu);
-    div.appendChild(contact);
-    div.appendChild(about);
-    div.appendChild(mid);
-    div.appendChild(right);
-    div.appendChild(bottom);
-    body.appendChild(div);
+    main.appendChild(name);
+    main.appendChild(home);
+    main.appendChild(menu);
+    main.appendChild(contact);
+    main.appendChild(about);
+    main.appendChild(mid);
+    main.appendChild(right);
+    main.appendChild(bottom);
+    div.appendChild(main);
 }
 
 export {home};
