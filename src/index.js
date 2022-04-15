@@ -1,1 +1,3 @@
-alert("Everything is good");
+import home from './home';
+
+home();
